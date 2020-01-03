@@ -3,11 +3,11 @@
     "palvelutunnus": "digiedu_ws",
     "varmennenimi": "DigiEdu",
     
-    "endpoint": "http://docker.for.mac.host.internal:8088/mockViranomaispalvelutSoap/",
+    "endpoint": "http://localhost:8088/mockViranomaispalvelutSoap/",
     "timeout": 60,
-    
-    "signRequests": false,
-    "privateKeyPath": "",
-    "publicKeyPath": "",
+
+    "signRequests": true,
+    "privateKeyPath": "./certs/soap_signing.key",
+    "publicKeyPath": "./certs/soap_signing.pem",
     "passphrase": ""
 }

@@ -13,7 +13,7 @@ class SoapClient {
         let tmpClient = soap.createClientAsync('./wsdl/Viranomaispalvelut.wsdl', {endpoint: this.config.endpoint});
         this.soapClient = tmpClient.then((client) => {
             if (this.config.signRequests) {
-                let privateKey = fs.readSync(this.config.privateKeyPath);
+                let privateKey = fs.readFileSync(this.config.privateKeyPath);
                 let publicKey = fs.readFileSync(this.config.publicKeyPath);
                 let wsSecurity = new soap.WSSecurityCert(privateKey, publicKey, this.config.passphrase);
                 client.setSecurity(wsSecurity);
