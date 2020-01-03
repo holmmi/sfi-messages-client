@@ -1,0 +1,13 @@
+{
+    "viranomaistunnus": "digiedu_ws",
+    "palvelutunnus": "digiedu_ws",
+    "varmennenimi": "DigiEdu",
+    
+    "endpoint": "http://docker.for.mac.host.internal:8088/mockViranomaispalvelutSoap/",
+    "timeout": 60,
+    
+    "signRequests": false,
+    "privateKeyPath": "",
+    "publicKeyPath": "",
+    "passphrase": ""
+}
